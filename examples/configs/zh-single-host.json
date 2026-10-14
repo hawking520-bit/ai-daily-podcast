@@ -1,0 +1,26 @@
+{
+  "show": {
+    "title": "每日简报",
+    "tagline": "每天十分钟",
+    "description": "一个人讲的每日私人简报。",
+    "owner_name": "Your Name",
+    "owner_email": "you@example.com",
+    "listener_name": "朋友",
+    "notes_footer": "私人订阅，不公开。",
+    "file_prefix": "jianbao"
+  },
+  "language": { "code": "zh-cn", "script_language": "Simplified Chinese", "glosses": false },
+  "hosts": [
+    { "id": "XIAO", "name": "晓晓", "voice": "zh-CN-XiaoxiaoNeural", "rate": "" }
+  ],
+  "voice_defaults": { "rate": "+0%", "gap_extra": 0.15, "lufs": -16, "bitrate": "96k" },
+  "segments": [
+    { "title": "开场", "music": "intro", "brief": "一句话说今天最值得听的一条。" },
+    { "title": "今天的内容", "music": "bed", "brief": "逐条讲：是什么、为什么重要、我能做什么。" },
+    { "title": "结尾", "music": "outro", "brief": "今天只做一件事，然后道别。" }
+  ],
+  "music": { "enabled": false },
+  "input": { "format": "markdown", "dir": "examples/notes", "file_pattern": "{date}.md" },
+  "plugins": { "zh_recap": false, "jobs_briefing": false, "zh_jobs_parser": false },
+  "output": { "backend": "local", "github_public_ok": false, "utc_offset_hours": 8, "pubtime": "07:30", "keep": 30 }
+}

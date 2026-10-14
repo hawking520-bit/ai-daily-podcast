@@ -1,0 +1,26 @@
+{
+  "show": {
+    "title": "My Daily Podcast",
+    "tagline": "AI, growth and building things",
+    "description": "A private daily briefing. Two hosts walk through my notes in plain English.",
+    "owner_name": "Your Name",
+    "owner_email": "you@example.com",
+    "listener_name": "friend",
+    "file_prefix": "episode"
+  },
+  "language": { "code": "en", "script_language": "English", "glosses": false },
+  "hosts": [
+    { "id": "ALEX", "name": "Alex", "voice": "en-US-AndrewMultilingualNeural", "rate": "" },
+    { "id": "MAYA", "name": "Maya", "voice": "en-US-AvaMultilingualNeural", "rate": "+2%" }
+  ],
+  "voice_defaults": { "rate": "-10%", "gap_extra": 0.2, "lufs": -16, "bitrate": "128k" },
+  "segments": [
+    { "title": "Cold open", "music": "intro", "brief": "A one-line hook about the best item today." },
+    { "title": "Main stories", "music": "bed", "brief": "Each note or link: what it is, why it matters, one takeaway." },
+    { "title": "Wrap", "music": "outro", "brief": "The one thing to do today, then goodbye." }
+  ],
+  "music": { "enabled": true, "dir": "music", "bed_db": -26 },
+  "input": { "format": "markdown", "dir": "examples/notes", "file_pattern": "{date}.md" },
+  "plugins": { "zh_recap": false, "jobs_briefing": false, "zh_jobs_parser": false },
+  "output": { "backend": "local", "github_public_ok": false, "utc_offset_hours": 0, "pubtime": "07:30", "keep": 30 }
+}

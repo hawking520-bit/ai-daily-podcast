@@ -1,0 +1,9 @@
+{
+  "backend": "stage",
+  "slug": "auto-generated-on-first-run-keep-this-secret",
+  "base_url": "",
+  "github_repo": "",
+  "cloudflare_account_id": "",
+  "cloudflare_project": "",
+  "keep": 30
+}
